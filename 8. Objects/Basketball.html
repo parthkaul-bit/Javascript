@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basketball Object</title>
+</head>
+<body>
+    Open Console
+</body>
+<script>
+    const basketball = {
+        price : 2095,
+        name: 'basketball'
+    }
+    console.log(basketball);
+
+    // increase price by 500
+    basketball.price += 500;
+    console.log(basketball);
+
+    // add delivery-time property
+
+    basketball['delivery-time'] = '3 days'
+    console.log(basketball);
+
+    // comparing price and return cheaper product
+    function comparePrice(product1, product2) {
+        if(product1.price < product2.price){
+            console.log(`${product1.name} is cheaper`);
+            return product1;
+        }
+        else if(product1.price === product2.price){
+            console.log(`Both are of same price`);
+        }
+        else if(product1.price > product2.price){ 
+            console.log(`${product2.name} is cheaper`);
+            return product2;
+        }
+    }
+    const toaster = {
+        name : 'Toaster',
+        price: 2000
+    }
+    const socks = {
+        name : 'Socks',
+        price : 300
+    }
+
+    const socks1 = {
+        name : 'Socks',
+        price : 300
+    }
+    const socks2 = {
+        name : 'Socks',
+        price : 300
+    }
+    const cheaperProduct = comparePrice(toaster, socks);
+    console.log(cheaperProduct);
+
+    // same product
+    function isSameProduct(product1, product2) {
+        if((product1.name === product2.name) && (product1.name === product2.name)){
+            return true;
+        }        
+        else
+            return false;
+    }
+
+    const result1 = isSameProduct(socks1, socks2);
+    const result2 = isSameProduct(socks, toaster);
+
+    console.log(result1);
+    console.log(result2);
+</script>
+</html>
