@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Heads or Tails</title>
+</head>
+<body>
+    <button class="js-heads" 
+    onclick="
+        display('heads');
+    ">Heads</button>
+
+    <button class="js-tails" 
+    onclick="
+    display('tails');
+    ">Tails</button>
+
+    <p></p>
+</body>
+<script>
+    function display(choice) {
+        choice = document.querySelector(`.js-${choice}`).innerText;
+        document.querySelector('p').innerHTML = `You chose: ${choice} ` 
+    }    
+
+</script>
+</html>

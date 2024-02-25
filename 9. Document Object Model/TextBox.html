@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Display Name</title>
+</head>
+<body>
+    <input type="text" placeholder="Name"  onkeydown = "handleNameKeyDown(event);">
+    <button onclick="
+    display(name)
+    ">Submit</button>
+    <p></p>
+</body>
+<script>
+    function display(name) {
+        if(event = 'Enter'){
+            name = document.querySelector('input').value;
+            document.querySelector('p').innerHTML = `My Name is : ${name}`;
+        }
+    }    
+    function handleNameKeyDown(event){
+        if(event.key === 'Enter') {
+            display(name);
+        }
+    }
+
+</script>
+</html>

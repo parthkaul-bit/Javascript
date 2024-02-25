@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>On Key Up</title>
+</head>
+<body>
+    <input type="text" onkeyup="handleDisplayKeyUp(event)">
+    <p></p>
+</body>
+<script>
+    let result = '';
+
+    function handleDisplayKeyUp(event) {
+        if(event){
+            result = result + event.key;
+            console.log(result);
+            document.querySelector('p').innerHTML = result;
+        }
+        
+    }
+</script>
+</html>
