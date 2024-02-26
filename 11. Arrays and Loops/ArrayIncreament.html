@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add One in Array</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let i = 0;
+    let array = [1, 2, 3];
+    for(let i = 0; i<array.length; i++){
+        array[i] = array[i] + 1;
+    }
+    console.log(array);
+
+    function addOne(array) {
+        for(let i = 0; i<array.length; i++){
+            array[i] = array[i] + 1;
+    }
+        console.log(array);
+    }
+    addOne(array);
+    addOne([-2, -1, 0, 99]);
+</script>
+</html>

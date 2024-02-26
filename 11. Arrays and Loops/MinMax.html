@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Two Arrays</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function minMax(nums) {
+        let result = {min: nums[0], max: nums[0]};
+
+        if(nums.length === 0){ 
+            result = {min : null , max : null};
+        }
+
+        for(let i = 0; i<= nums.length; i++){
+            if(nums[i] < result.min){
+                result.min = nums[i];
+                // console.log(result);
+            }
+
+            if(nums[i] > result.max){
+                result.max = nums[i];
+                // console.log(result);
+            }
+        }
+        return result;
+    }
+
+    console.log(minMax([1, -3, -5, 4]));
+    console.log(minMax([]));
+    console.log(minMax([3, 3]));
+</script>
+</html>

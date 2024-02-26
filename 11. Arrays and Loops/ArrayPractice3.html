@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Array Practice</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // swap first and last
+    function arrayswap(array) {
+        const firstValue = array[0]; 
+        const lastValue = array[array.length - 1];
+        array[0] = lastValue;
+        array[array.length - 1] = firstValue;
+        return array;
+    }
+    
+    console.log(arrayswap([1, 20, 22, 24, 51]));
+    console.log(arrayswap(['hi', 'hello', 'good']));
+
+</script>
+</html>

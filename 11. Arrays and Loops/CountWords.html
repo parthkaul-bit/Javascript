@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Words</title>
+</head>
+<body>
+    
+</body>
+<script>
+function countWords(words) {
+    const wordCounts = {};
+    for(let i  = 0; i < words.length; i++){
+        const word = words[i];
+        if(wordCounts[word]){
+            wordCounts[word]++;
+        }
+        else{
+            wordCounts[word] = 1;
+        }
+    }
+    return wordCounts;
+   
+}
+
+console.log(countWords(['apple', 'grape', 'apple', 'apple'])); // Output: { apple: 3, grape: 1 }
+
+
+</script>
+</html>
+
+

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Count Positive</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function countPositive(nums) {
+        let count = 0; 
+        for(let i = 0; i<nums.length; i++){
+            if(nums[i] > 0){
+                count++;
+            } 
+        }
+        return count;
+    }
+    console.log(
+        countPositive([1, -3, -4])
+    );
+
+    console.log(countPositive([-2, 3, -4, 7, 10]));
+</script>
+</html>
