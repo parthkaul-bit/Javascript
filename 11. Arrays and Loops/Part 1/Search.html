@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search String</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // let string = 'search';
+    function searchString(array, string) {
+        let result = -1;
+        for(let i = 0; i<array.length; i++){
+            let target = array[i];
+            if(target === string){
+                result =  i;
+                break;
+            }
+        }
+        return result;
+    }
+   
+
+    console.log(searchString(['hello', 'world', 'search', 'good', 'search'], 'search'));
+    console.log(searchString(['not', 'found'], 'found'));
+
+    console.log(searchString(['green','red', 'blue', 'red'], 'red'));
+    console.log(searchString(['green', 'red', 'blue', 'red'], 'yellow'));
+</script>
+</html>

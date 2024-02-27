@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unique</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function searchString(array, string) {
+        for(let i = 0; i<array.length; i++){
+            let target = array[i];
+            if(target === string){
+                return i;
+            }
+        }
+        return -1;
+    }
+    function unique(array) {
+        const result = [];
+        for(let i = 0; i < array.length; i++){
+        const string = array[i];
+        if(searchString(result, string) === -1){
+            result.push(string);
+            }
+        }
+        return result;
+    }
+    console.log(unique(['green', 'red', 'blue', 'red']));
+    // console.log(searchString(['green', 'red', 'blue', 'red'], 'red'));
+</script>
+</html>
