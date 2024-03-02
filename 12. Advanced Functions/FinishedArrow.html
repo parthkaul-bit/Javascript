@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finished</title>
+</head>
+<body>
+    <button class="finish-button">Finish</button>
+</body>
+<script>
+    const buttonElement = document.querySelector('.finish-button');
+    buttonElement.addEventListener('click', () => {
+        loading();
+        finished();
+    })
+    const loading = () => {
+        document.querySelector('button').innerHTML = 'Loading...';
+    }
+
+    const finished = () => {
+        setTimeout(function()       
+        {
+            document.querySelector('button').innerHTML = 'Finished!'
+        }, 1000);
+    }
+</script>
+</html>

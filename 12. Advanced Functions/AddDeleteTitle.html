@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Messages</title>
+</head>
+<body>
+    <button onclick="
+        add();
+        ">Add</button>
+    <button onclick="
+       reduce();
+    ">Delete</button>
+</body>
+<script>
+    let messages = 2;
+    function changeTitle() {
+        if (messages === 0) {
+            document.title = `App`;
+        }
+        else{
+            document.title = `(${messages}) New Messages`;
+        }
+    }
+
+    function add() {
+        messages++;
+        changeTitle();
+    }    
+    
+    function reduce() {
+        if(messages > 0 ){
+            messages--;
+            changeTitle();
+        }
+
+    }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add To Cart</title>
+</head>
+<body>
+    <button class="add-to-cart-button">Add to Cart</button>
+    <div></div>
+</body>
+<script>
+    const addToCartElement = document.querySelector('.add-to-cart-button');
+    addToCartElement.addEventListener('click', () => {
+        showPopUp();
+    }) 
+
+    let timeOutID; 
+    const showPopUp = () => {
+        // clear all previvious timeouts
+        clearTimeout(timeOutID);
+        document.querySelector('div').innerHTML = 'Added'
+        // show pop ups
+        timeOutID = setTimeout(function()       
+        {   
+            document.querySelector('div').innerHTML = ''
+        }, 2000);
+
+    }
+
+</script>
+</html>

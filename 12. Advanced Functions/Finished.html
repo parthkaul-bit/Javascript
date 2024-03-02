@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finished</title>
+</head>
+<body>
+    <button onclick="
+        loading();
+        finished();
+        ">Finish</button>
+</body>
+<script>
+    function loading() {
+        document.querySelector('button').innerHTML = 'Loading...';
+    }
+
+    function finished() {
+        setTimeout(function()       
+        {
+            document.querySelector('button').innerHTML = 'Finished!'
+        }, 1000);
+    }
+</script>
+</html>

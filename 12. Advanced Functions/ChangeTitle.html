@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>New Messages</title>
+</head>
+<body>
+</body>
+<script>
+    function changeTitle() {
+        let i = 0;
+        setInterval(function()       
+        {   
+            document.title = `(${i}) New Messages`;
+            i++;
+        }, 1000);
+
+    }
+    changeTitle();
+</script>
+</html>

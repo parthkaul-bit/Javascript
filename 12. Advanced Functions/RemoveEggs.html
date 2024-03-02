@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Filter Function</title>
+</head>
+<body>
+</body>
+<script>
+    let removedEggs = 0;
+    function removeEggs(foods) {
+        return  foods.filter(element => {
+            if(element === 'eggs' && removedEggs < 2){
+                removedEggs++;
+                return false;  
+            }
+            else{
+                return element;
+            }
+        });
+    }
+    console.log(removeEggs(['eggs', 'sandwich', 'ham' , 'eggs' , 'eggs']));
+</script>
+</html>

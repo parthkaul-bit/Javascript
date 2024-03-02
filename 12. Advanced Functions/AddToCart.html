@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Finished</title>
+</head>
+<body>
+    <button onclick="
+        showPopUp()
+        ">Add to Cart</button>
+    <div></div>
+</body>
+<script>
+    let timeOutID; 
+    function showPopUp() {
+        // clear all previvious timeouts
+        clearTimeout(timeOutID);
+        document.querySelector('div').innerHTML = 'Added'
+        // show pop ups
+        timeOutID = setTimeout(function()       
+        {   
+            document.querySelector('div').innerHTML = ''
+        }, 2000);
+
+    }
+
+</script>
+</html>
